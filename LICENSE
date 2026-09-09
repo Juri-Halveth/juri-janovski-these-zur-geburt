@@ -1,7 +1,15 @@
-This project uses two licenses:
+This repository contains versioned and path-specific license states.
 
-1. Program code is licensed under the MIT License in LICENSE-CODE.
-2. Thesis text, documentation and the generated PDF are licensed under
+The authoritative map is LICENSES.md:
+
+1. Existing program code remains under the MIT License in LICENSE-CODE where
+   LICENSES.md assigns it.
+2. Thesis text, documentation and PDF in tags v1.0.0 and v1.1.0 remain under
    Creative Commons Attribution 4.0 International in LICENSE-CONTENT.
+3. Distinguishable new contributions from v1.2.0 use the Juri Public-Interest
+   Research Permission 1.0 where LICENSES.md expressly assigns it.
+4. Third-party components retain the terms reproduced in
+   THIRD_PARTY_NOTICES.md.
 
-Copyright © 2026 Juri Janovski.
+Copyright © 2026 Juri Janovski, to the extent the applicable rights exist and
+are controlled by him.

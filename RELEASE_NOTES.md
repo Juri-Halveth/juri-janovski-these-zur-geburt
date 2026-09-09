@@ -1,3 +1,21 @@
+# v1.2.0 — CODE ZEITWÄRTSZURÜCK, Rechte und Provenienz
+
+Diese Fassung ergänzt die Veröffentlichung um einen überprüfbaren Rechte- und Provenienzumschlag.
+
+Neu enthalten sind:
+
+- zwei zusätzliche PDF-Seiten zu Rechteposition, Lizenzgrenzen, X-Tausch, Assistenzzustand und Drittanbieterkomponenten;
+- `scripts/code_zeitwaertszurueck.py` mit kanonischem JSON, annotierter Tagbindung, Commit-, Tree-, Blob-, Byte- und SHA-256-Nachweis sowie sichtbarer First-Parent-Historie;
+- 14 Unit-Tests gegen verschobene Tags und manipulierte Digests, Bytes oder Pfade;
+- ein vollständiges Git-Quellbundle und eine releaseweite Prüfsummenliste;
+- eine Pfad- und Versionskarte, die die fortgeltenden MIT- und CC-BY-4.0-Freigaben der Tags `v1.0.0` und `v1.1.0` von unterscheidbaren neuen Beiträgen ab `v1.2.0` trennt;
+- die Juri Public-Interest Research Permission 1.0 für die ausdrücklich zugeordneten neuen Beiträge;
+- vollständige Lizenzhinweise für ReportLab 4.4.9 und die eingebetteten Bitstream-Vera-Schriften.
+
+Der Nachweis bindet den veröffentlichten Git-Stand. Er behauptet keinen früheren Zeitpunkt, keine Rechte an allgemeinen Ideen oder Drittmaterial und keine wissenschaftliche Außenwirkung.
+
+---
+
 # v1.1.0 — Institutioneller Übergangsraum
 
 Die Codeformel der Geburtsthese wird als eigenständige öffentliche Systemthese

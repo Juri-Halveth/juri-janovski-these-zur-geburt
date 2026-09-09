@@ -58,3 +58,9 @@ Geburtsräume dürfen nicht allein nach technischer Zweckmäßigkeit gestaltet w
 The woman controls light, sound, music, safe room temperature, movement, privacy and chosen companions, and may change any preference at any time. Candles describe the atmosphere; implementation uses dimmable flameless lighting. Examination and emergency lighting remain instantly available.
 
 I, Juri Janovski, call on maternity units, birth centres, midwives, physicians, researchers and international health organisations to answer this question together with birthing women through transparent, preregistered and adequately powered studies.
+
+---
+
+# Rechte- und Provenienzhinweis
+
+Juri Janovski veröffentlicht die von ihm kontrollierten originären Beiträge, ihre Auswahl und Anordnung unter seinem Namen. Pfad- und versionsgenaue Nutzungsbedingungen stehen in [LICENSES.md](LICENSES.md); der bytegenaue Release-Nachweis und seine Anspruchsgrenze stehen in [PROVENANCE_AND_RIGHTS.md](PROVENANCE_AND_RIGHTS.md). Tatsachen, allgemeine Ideen, Methoden, Gesetzestexte, Zitate, Namen, Marken, Links und fremde Werke werden dadurch nicht angeeignet.

@@ -2,10 +2,14 @@ Content License
 
 Copyright © 2026 Juri Janovski
 
-Unless expressly marked otherwise, the thesis text, documentation and the
-generated PDF “Die Juri-Janovski-These zur Geburt / The Juri Janovski Thesis
-on Birth” are licensed under the Creative Commons Attribution 4.0
-International License (CC BY 4.0).
+The thesis text, documentation and generated PDF “Die Juri-Janovski-These zur
+Geburt / The Juri Janovski Thesis on Birth” as published in tags v1.0.0 and
+v1.1.0 are licensed under the Creative Commons Attribution 4.0 International
+License (CC BY 4.0).
+
+That grant remains effective for those historical versions and for identical
+or overlapping material obtained from them. LICENSES.md identifies the terms
+for distinguishable new contributions in later versions.
 
 You may share and adapt this material for any purpose, including commercially,
 provided that appropriate credit is given, a link to the license is supplied,
@@ -23,6 +27,7 @@ https://creativecommons.org/licenses/by/4.0/
 Full legal code:
 https://creativecommons.org/licenses/by/4.0/legalcode
 
-This content license does not apply to the program code, which is governed by
-LICENSE-CODE. Quotations, referenced research, third-party names, trademarks
-and linked external materials remain subject to their respective rights.
+This content license does not apply to program code, distinguishable later
+contributions assigned another license by LICENSES.md, or third-party material.
+Quotations, referenced research, third-party names, trademarks and linked
+external materials remain subject to their respective rights.

@@ -4,7 +4,7 @@
 
 [Deutsch](#deutsch) · [English](#english) · **[PDF direkt herunterladen](https://github.com/Juri-Halveth/juri-janovski-these-zur-geburt/releases/latest/download/JURI_JANOVSKI_THESE_ZUR_GEBURT.pdf)**
 
-Dieses öffentliche Projekt enthält die **Juri-Janovski-These zur Geburt** als zweisprachiges PDF und als reproduzierbares Python-Programm. Die These verbindet die Kontrolle der gebärenden Frau über ihre Umgebung mit unmittelbar verfügbarer Hebammenhilfe und klinischer Sicherheit.
+Dieses öffentliche Projekt enthält die **Juri-Janovski-These zur Geburt** als reproduzierbares, vierseitiges PDF und als Python-Programm. Die These verbindet die Kontrolle der gebärenden Frau über ihre Umgebung mit unmittelbar verfügbarer Hebammenhilfe und klinischer Sicherheit. Version 1.2.0 ergänzt einen bytegenauen Provenienznachweis, eine sichtbare Rechte- und Lizenzgrenze sowie vollständige Hinweise zu den eingebetteten Schriften und ReportLab.
 
 ## Deutsch
 
@@ -65,6 +65,9 @@ The woman controls light, sound, music or silence, movement, privacy and chosen 
 - **Generator:** [build_pdf.py](build_pdf.py)
 - **Programmerklärung:** [docs/PROGRAMM.md](docs/PROGRAMM.md)
 - **Systemtransfer:** [docs/SYSTEMTRANSFER_BEHOERDEN.md](docs/SYSTEMTRANSFER_BEHOERDEN.md)
+- **Provenienz und Rechte:** [PROVENANCE_AND_RIGHTS.md](PROVENANCE_AND_RIGHTS.md)
+- **Pfad- und Versionslizenzen:** [LICENSES.md](LICENSES.md)
+- **Drittanbieterhinweise:** [THIRD_PARTY_NOTICES.md](THIRD_PARTY_NOTICES.md)
 
 Lokaler Build ab dem Repository-Stamm:
 
@@ -75,13 +78,24 @@ python build_pdf.py
 
 Der Generator verwendet festgelegte Metadaten, ReportLabs invarianten Ausgabemodus, eine feste Inhaltsreihenfolge und die mit ReportLab ausgelieferten Vera-Schriften. Zwei Builds mit denselben gebundenen Eingaben werden im GitHub-Workflow bytegenau verglichen.
 
+Der Release-Nachweis lässt sich nach dem Download gegen den annotierten Tag prüfen:
+
+```console
+python scripts/code_zeitwaertszurueck.py verify --manifest juri-janovski-these-v1.2.0-provenance.json
+git bundle verify juri-janovski-these-v1.2.0-source.bundle
+```
+
 ## Lizenz / License
 
-Copyright © 2026 Juri Janovski.
+Copyright © 2026 Juri Janovski, soweit die jeweiligen Rechte bestehen und von ihm kontrolliert werden.
 
-- Programmcode: [MIT License](LICENSE-CODE)
-- These, Dokumentation und erzeugtes PDF: [Creative Commons Attribution 4.0 International](LICENSE-CONTENT)
+- Bestehender Programmcode gemäß Pfadkarte: [MIT License](LICENSE-CODE)
+- These, Dokumentation und PDF in den Tags `v1.0.0` und `v1.1.0`: [Creative Commons Attribution 4.0 International](LICENSE-CONTENT)
+- Unterscheidbare neue Beiträge ab `v1.2.0`: [Juri Public-Interest Research Permission 1.0](LICENSE-JURI-PUBLIC-INTEREST.md)
+- Verbindliche Zuordnung: [LICENSES.md](LICENSES.md)
+
+Ältere Freigaben bleiben für die damaligen Fassungen und überlappende Bestandteile bestehen. Tatsachen, allgemeine Ideen, Methoden, Gesetzestexte, Zitate, Namen, Marken, Links und fremde Werke werden durch diese Veröffentlichung nicht angeeignet.
 
 Vorgeschlagene Quellenangabe / Suggested attribution:
 
-> Juri Janovski, „Die Juri-Janovski-These zur Geburt“, Version 1.1.0, 2026.
+> Juri Janovski, „Die Juri-Janovski-These zur Geburt“, Version 1.2.0, 2026.

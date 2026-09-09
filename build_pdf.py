@@ -67,6 +67,9 @@ SMALL = style("small", size=7.4, leading=9.4, color=MUTED)
 SECTION = style("section", font=SANS_BOLD, size=10.3, leading=12.5, color=NAVY)
 THESIS = style("thesis", font=SERIF_BOLD, size=12.2, leading=16.5, color=NAVY, align=TA_CENTER)
 CALL = style("call", font=SERIF, size=9.4, leading=13, color=NAVY)
+LEGAL_BODY = style("legal_body", size=8.0, leading=10.6, color=INK)
+LEGAL_SMALL = style("legal_small", size=5.65, leading=7.2, color=INK)
+LEGAL_HEAD = style("legal_head", font=SANS_BOLD, size=9.3, leading=11.2, color=NAVY)
 
 
 def draw_para(c, text, x, y_top, width, pstyle=BODY):
@@ -120,6 +123,35 @@ def footer(c, page_no, lang):
         else "A thesis for testing, not a rigid birth rule. The woman decides; clinical help remains immediately available."
     )
     c.drawString(MARGIN, 8.5 * mm, note)
+    c.drawRightString(PAGE_W - MARGIN, 8.5 * mm, str(page_no))
+
+
+def legal_header(c, kicker, title, subtitle, page_no):
+    c.setFillColor(CREAM)
+    c.rect(0, 0, PAGE_W, PAGE_H, fill=1, stroke=0)
+    c.setFillColor(NAVY)
+    c.rect(0, PAGE_H - 38 * mm, PAGE_W, 38 * mm, fill=1, stroke=0)
+    c.setFillColor(Color(1, 1, 1, alpha=0.07))
+    c.circle(PAGE_W - 10 * mm, PAGE_H - 13 * mm, 28 * mm, fill=1, stroke=0)
+    c.setFillColor(GOLD)
+    c.setFont(SANS_BOLD, 8.1)
+    c.drawString(MARGIN, PAGE_H - 12 * mm, kicker)
+    draw_para(
+        c,
+        title,
+        MARGIN,
+        PAGE_H - 16 * mm,
+        PAGE_W - 2 * MARGIN,
+        style(f"legal_title_{page_no}", font=SERIF_BOLD, size=20, leading=23, color=WHITE),
+    )
+    c.setFillColor(WHITE)
+    c.setFont(SANS, 7.5)
+    c.drawString(MARGIN, PAGE_H - 34 * mm, subtitle)
+    c.setStrokeColor(HexColor("#D8D0C0"))
+    c.line(MARGIN, 13 * mm, PAGE_W - MARGIN, 13 * mm)
+    c.setFillColor(MUTED)
+    c.setFont(SANS, 6.6)
+    c.drawString(MARGIN, 8.5 * mm, "Juri Janovski · Version 1.2.0 · 9 September 2026")
     c.drawRightString(PAGE_W - MARGIN, 8.5 * mm, str(page_no))
 
 
@@ -264,14 +296,116 @@ def page_en(c):
     c.showPage()
 
 
+def page_rights(c):
+    legal_header(
+        c,
+        "RECHTE · PROVENIENZ · RIGHTS",
+        "CODE ZEITWÄRTSZURÜCK",
+        "Ein bytegenauer Release-Nachweis mit sichtbarer Anspruchsgrenze / A byte-exact release record with a visible claim boundary",
+        3,
+    )
+
+    y = PAGE_H - 48 * mm
+    gap = 8 * mm
+    col_w = (PAGE_W - 2 * MARGIN - gap) / 2
+    rx = MARGIN + col_w + gap
+
+    draw_para(c, "DEUTSCH", MARGIN, y, col_w, LEGAL_HEAD)
+    left_y = y - 6 * mm
+    left = (
+        "<b>Juri Janovskis Rechteposition.</b> Diese Fassung bezeichnet Juri Janovski als Herausgeber und Urheber der von ihm kontrollierten originären Beiträge, Auswahl und Anordnung. Tatsachen, allgemeine Ideen, Methoden, Gesetzestexte, Namen, Marken, Zitate, Links und fremde Werke werden dadurch nicht angeeignet.<br/><br/>"
+        "<b>Lizenzgrenze.</b> Programmcode bleibt gemäß Pfadkarte überwiegend MIT-lizenziert. Die Tags v1.0.0 und v1.1.0 bleiben für These, Dokumentation und PDF unter CC BY 4.0 nutzbar. Unterscheidbare neue Beiträge ab v1.2.0 stehen unter der Juri Public-Interest Research Permission 1.0. Identische oder überlappende ältere Teile behalten die weitergehende alte Freigabe.<br/><br/>"
+        "<b>Gemeinwohl und Werbung.</b> Nichtkommerzielle Forschung, Bildung, Kritik und Dokumentation sind nach der neuen Erlaubnis mit Namensnennung, Versionsangabe, Änderungskennzeichnung und ohne Scheinendorsement erlaubt. Werbung, Sponsoring, Leadgenerierung, bezahlte Reichweite, monetarisierte Inhalte und kommerzielle Markenverknüpfung benötigen, soweit rechtlich erforderlich, eine gesonderte vorherige schriftliche Erlaubnis.<br/><br/>"
+        "<b>X-Tausch.</b> Ein Tausch, eine Beteiligung oder Vergütung entsteht erst durch übereinstimmende Zustimmung zu Beteiligten, Material oder Digest, Nutzung, Rechteumfang, Gegenwert und Zeitpunkt. Hash, Aufmerksamkeit, Schweigen oder Download erzeugen keinen automatischen Vertrag oder Betrag."
+    )
+    left_y = draw_para(c, left, MARGIN, left_y, col_w, LEGAL_BODY)
+
+    draw_para(c, "ENGLISH", rx, y, col_w, LEGAL_HEAD)
+    right_y = y - 6 * mm
+    right = (
+        "<b>Juri Janovski's rights position.</b> This version identifies Juri Janovski as publisher and author of the original contributions, selection and arrangement that he controls. Facts, general ideas, methods, laws, names, marks, quotations, links and third-party works are not appropriated by that statement.<br/><br/>"
+        "<b>Licence boundary.</b> Program code remains predominantly MIT-licensed according to the path map. Tags v1.0.0 and v1.1.0 remain available under CC BY 4.0 for the thesis, documentation and PDF. Distinguishable new contributions from v1.2.0 are offered under Juri Public-Interest Research Permission 1.0. Identical or overlapping earlier material retains the broader earlier grant.<br/><br/>"
+        "<b>Public interest and advertising.</b> The new permission allows non-commercial research, education, criticism and documentation with attribution, version and change notices, and no implied endorsement. Advertising, sponsorship, lead generation, paid reach, monetised content and commercial brand association require separate prior written permission where the law requires it.<br/><br/>"
+        "<b>X exchange.</b> An exchange, participation or payment arises only from matching assent on parties, material or digest, use, rights, consideration and time. A hash, attention, silence or download creates no automatic contract or amount."
+    )
+    right_y = draw_para(c, right, rx, right_y, col_w, LEGAL_BODY)
+
+    panel_top = min(left_y, right_y) - 8 * mm
+    panel_h = 43 * mm
+    rounded_panel(c, MARGIN, panel_top - panel_h, PAGE_W - 2 * MARGIN, panel_h, PALE_TEAL, HexColor("#A4CEC5"), 10)
+    draw_para(c, "WAS DER SNAPSHOT BELEGT / WHAT THE SNAPSHOT PROVES", MARGIN + 7 * mm, panel_top - 6 * mm, PAGE_W - 2 * MARGIN - 14 * mm, style("snapshot_head", font=SANS_BOLD, size=9.2, leading=11, color=TEAL))
+    snapshot = (
+        "<b>TAG_OR_REF -&gt; COMMIT -&gt; TREE -&gt; PATH -&gt; BYTES -&gt; SHA-256 -&gt; VISIBLE HISTORY -&gt; LICENCE RULE.</b><br/>"
+        "Der Release-Umschlag bindet die aufgelisteten Git-Objekte, Dateien, Byteanzahlen, Digests und die im Repository sichtbare First-Parent-Historie. Er ermöglicht eine spätere bytegenaue Gleichheits- oder Abweichungsprüfung. / The release envelope binds the listed Git objects, files, byte counts, digests and first-parent history visible in this repository, enabling later byte-exact equality or divergence checks.<br/><br/>"
+        "<b>Anspruchsgrenze / claim ceiling:</b> Der Nachweis ist keine notarielle Beglaubigung. Er beweist keinen Zeitpunkt vor der gebundenen Historie, keine ausschließlichen Rechte an einer allgemeinen Idee, keine wissenschaftliche Wahrheit, keine Kenntnis durch Dritte und keine äußere Kausalität."
+    )
+    draw_para(c, snapshot, MARGIN + 7 * mm, panel_top - 13 * mm, PAGE_W - 2 * MARGIN - 14 * mm, style("snapshot_body", size=7.35, leading=9.4, color=INK))
+
+    note_y = panel_top - panel_h - 7 * mm
+    draw_para(c, "ASSISTENZ / ASSISTANCE", MARGIN, note_y, PAGE_W - 2 * MARGIN, LEGAL_HEAD)
+    assistance = (
+        "OpenAI-Werkzeuge unterstützten Redaktion, Code und Prüfung. Nach den zum Releasezeitpunkt verlinkten OpenAI-Nutzungsbedingungen werden etwaige OpenAI-Rechte am Output im Verhältnis Nutzer–OpenAI und soweit rechtlich zulässig dem Nutzer zugeordnet; Outputs können nicht einzigartig sein. Daraus entstehen weder Miteigentum des Assistenten noch automatische Vergütung, Rechte an fremden Inputs oder ein Nachweis menschlicher Alleinurheberschaft. Details: PROVENANCE_AND_RIGHTS.md · LICENSES.md · https://openai.com/policies/terms-of-use/"
+    )
+    draw_para(c, assistance, MARGIN, note_y - 5 * mm, PAGE_W - 2 * MARGIN, style("assistance", size=7.15, leading=9.2, color=MUTED))
+    c.showPage()
+
+
+def page_third_party(c):
+    legal_header(
+        c,
+        "DRITTANBIETER · THIRD-PARTY NOTICES",
+        "SCHRIFTEN UND PDF-WERKZEUG",
+        "Beigefügte Lizenzhinweise für eingebettete Bitstream-Vera-Schriften und ReportLab 4.4.9",
+        4,
+    )
+    y = PAGE_H - 47 * mm
+    gap = 7 * mm
+    col_w = (PAGE_W - 2 * MARGIN - gap) / 2
+    rx = MARGIN + col_w + gap
+
+    draw_para(c, "BITSTREAM VERA FONTS", MARGIN, y, col_w, LEGAL_HEAD)
+    vera = (
+        "Copyright (c) 2003 by Bitstream, Inc. All Rights Reserved. Bitstream Vera is a trademark of Bitstream, Inc.<br/><br/>"
+        "Permission is hereby granted, free of charge, to any person obtaining a copy of the fonts accompanying this license (\"Fonts\") and associated documentation files (the \"Font Software\"), to reproduce and distribute the Font Software, including without limitation the rights to use, copy, merge, publish, distribute, and/or sell copies of the Font Software, and to permit persons to whom the Font Software is furnished to do so, subject to the following conditions:<br/><br/>"
+        "The above copyright and trademark notices and this permission notice shall be included in all copies of one or more of the Font Software typefaces.<br/><br/>"
+        "The Font Software may be modified, altered, or added to, and in particular the designs of glyphs or characters in the Fonts may be modified and additional glyphs or characters may be added to the Fonts, only if the fonts are renamed to names not containing either the words \"Bitstream\" or the word \"Vera\".<br/><br/>"
+        "This License becomes null and void to the extent applicable to Fonts or Font Software that has been modified and is distributed under the \"Bitstream Vera\" names.<br/><br/>"
+        "The Font Software may be sold as part of a larger software package but no copy of one or more of the Font Software typefaces may be sold by itself.<br/><br/>"
+        "THE FONT SOFTWARE IS PROVIDED \"AS IS\", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO ANY WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT OF COPYRIGHT, PATENT, TRADEMARK, OR OTHER RIGHT. IN NO EVENT SHALL BITSTREAM OR THE GNOME FOUNDATION BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, INCLUDING ANY GENERAL, SPECIAL, INDIRECT, INCIDENTAL, OR CONSEQUENTIAL DAMAGES, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF THE USE OR INABILITY TO USE THE FONT SOFTWARE OR FROM OTHER DEALINGS IN THE FONT SOFTWARE.<br/><br/>"
+        "Except as contained in this notice, the names of Gnome, the Gnome Foundation, and Bitstream Inc., shall not be used in advertising or otherwise to promote the sale, use or other dealings in this Font Software without prior written authorization from the Gnome Foundation or Bitstream Inc., respectively. For further information, contact: fonts at gnome dot org."
+    )
+    draw_para(c, vera, MARGIN, y - 6 * mm, col_w, LEGAL_SMALL)
+
+    draw_para(c, "REPORTLAB", rx, y, col_w, LEGAL_HEAD)
+    reportlab_notice = (
+        "Copyright (c) 2000-2024, ReportLab Inc. All rights reserved.<br/><br/>"
+        "Redistribution and use in source and binary forms, with or without modification, are permitted provided that the following conditions are met:<br/><br/>"
+        "1. Redistributions of source code must retain the above copyright notice, this list of conditions and the following disclaimer.<br/><br/>"
+        "2. Redistributions in binary form must reproduce the above copyright notice, this list of conditions and the following disclaimer in the documentation and/or other materials provided with the distribution.<br/><br/>"
+        "3. Neither the name of the company nor the names of its contributors may be used to endorse or promote products derived from this software without specific prior written permission.<br/><br/>"
+        "THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS \"AS IS\" AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL THE OFFICERS OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE."
+    )
+    right_y = draw_para(c, reportlab_notice, rx, y - 6 * mm, col_w, LEGAL_SMALL)
+    right_y -= 7 * mm
+    draw_para(c, "ABGRENZUNG / BOUNDARY", rx, right_y, col_w, LEGAL_HEAD)
+    boundary = (
+        "Die eingebetteten Schriften, ReportLab, zitierte Studien, Institutionstexte, Tatsachen, Namen, Marken, Links und fremde Werke werden nicht als Eigentum von Juri Janovski beansprucht. / Embedded fonts, ReportLab, cited studies, institutional texts, facts, names, marks, links and third-party works are not claimed as Juri Janovski's property.<br/><br/>"
+        "Vollständige Quellen- und Pfadzuordnung: THIRD_PARTY_NOTICES.md und LICENSES.md im Release-Repository."
+    )
+    draw_para(c, boundary, rx, right_y - 5 * mm, col_w, style("boundary", size=6.4, leading=8.2, color=MUTED))
+    c.showPage()
+
+
 def build():
     OUTPUT.parent.mkdir(parents=True, exist_ok=True)
     c = canvas.Canvas(str(OUTPUT), pagesize=A4, pageCompression=1, invariant=1)
     c.setTitle("Die Juri-Janovski-These zur Geburt / The Juri Janovski Thesis on Birth")
     c.setAuthor("Juri Janovski")
-    c.setSubject("Public research question on woman-controlled, low-stimulus birth environments")
+    c.setSubject("Public research question on birth environments; versioned rights and byte-exact provenance record")
     page_de(c)
     page_en(c)
+    page_rights(c)
+    page_third_party(c)
     c.save()
     print(OUTPUT)
 
