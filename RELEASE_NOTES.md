@@ -1,3 +1,28 @@
+# v1.1.0 — Institutioneller Übergangsraum
+
+Die Codeformel der Geburtsthese wird als eigenständige öffentliche Systemthese
+auf Behörden und große öffentliche Arbeitgeber übertragen:
+
+**Druck senken. Handlungsspielraum öffnen. Rechte und Sicherheit sichern. Erst
+nach Verstehen entscheiden.**
+
+Neu enthalten sind:
+
+- der frei zugängliche institutionelle Übergangsraum als physischer, digitaler
+  oder verfahrensgebundener Klärungsweg;
+- neun konkrete Mindestfunktionen von Eintritt und Druckstopp bis Wiedereintritt;
+- eine getrennte Anwendung auf Sozialleistungsträger und öffentliche Arbeitgeber;
+- Rechtsanker in SGB I, ArbSchG, BPersVG, SGB IX und Artikel 17 GG;
+- eine messbare Forschungsfrage für transparente Pilotversuche;
+- eine Prämissen-Firewall für berichtete Belastung, Beobachtung und weitergehende
+  Kausalitäts- oder Rechtsfragen.
+
+Der medizinische Geburtsraum und der institutionelle Übergangsraum bleiben
+verschiedene Gegenstände. Übertragen wird der Gestaltungsoperator eines
+kritischen Übergangs.
+
+---
+
 # v1.0.0 — Erste öffentliche Veröffentlichung / Initial Public Release
 
 Diese erste öffentliche Version veröffentlicht die **Juri-Janovski-These zur Geburt** als klar formulierte und überprüfbare Forschungsfrage.

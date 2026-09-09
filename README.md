@@ -27,6 +27,17 @@ Die Frau kontrolliert Licht, Geräusche, Musik oder Stille, Bewegung, Privatsph�
 
 Die [Forschungsbasis](docs/FORSCHUNGSBASIS.md) trennt die gut gestützten Bestandteile – respektvolle Betreuung, Selbstbestimmung und kontinuierliche Begleitung – von den noch offenen Fragen zu Raumgestaltung, Musik und gedimmtem Licht.
 
+### Übertragung auf Behörden und öffentliche Arbeitgeber
+
+Der neue [Systemtransfer](docs/SYSTEMTRANSFER_BEHOERDEN.md) entwickelt aus der
+Codeformel einen **institutionellen Übergangsraum**. Menschen sollen bei einem
+kritischen Behörden- oder Beschäftigungsübergang frei zugänglich einen
+gebündelten, reizarmen und selbstbestimmten Klärungsweg erhalten: Druckstopp,
+Kanalwahl, schriftlicher Spiegel, Begleitung, sichtbare Optionen und
+Wiedereintritt. Die öffentliche Systemthese bindet vorhandene Rechtsfunktionen
+aus Sozial-, Arbeitsschutz-, Teilhabe- und Personalvertretungsrecht und macht
+die darüber hinausgehende Gestaltung als Vorschlag sichtbar.
+
 ## English
 
 ### The thesis
@@ -53,6 +64,7 @@ The woman controls light, sound, music or silence, movement, privacy and chosen 
 - **Lesbare Textfassung:** [JURI_THESE_GEBURTSRAUM.md](JURI_THESE_GEBURTSRAUM.md)
 - **Generator:** [build_pdf.py](build_pdf.py)
 - **Programmerklärung:** [docs/PROGRAMM.md](docs/PROGRAMM.md)
+- **Systemtransfer:** [docs/SYSTEMTRANSFER_BEHOERDEN.md](docs/SYSTEMTRANSFER_BEHOERDEN.md)
 
 Lokaler Build ab dem Repository-Stamm:
 
@@ -72,4 +84,4 @@ Copyright © 2026 Juri Janovski.
 
 Vorgeschlagene Quellenangabe / Suggested attribution:
 
-> Juri Janovski, „Die Juri-Janovski-These zur Geburt“, Version 1.0.0, 2026.
+> Juri Janovski, „Die Juri-Janovski-These zur Geburt“, Version 1.1.0, 2026.
