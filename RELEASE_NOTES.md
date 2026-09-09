@@ -1,0 +1,31 @@
+# v1.0.0 — Erste öffentliche Veröffentlichung / Initial Public Release
+
+Diese erste öffentliche Version veröffentlicht die **Juri-Janovski-These zur Geburt** als klar formulierte und überprüfbare Forschungsfrage.
+
+Enthalten sind:
+
+- die These auf Deutsch und Englisch;
+- messbare Kriterien für Selbstbestimmung, Geburtserleben und klinische Sicherheit;
+- eine durch die gebärende Frau steuerbare Raumgestaltung;
+- dimmbare, flammenlose Beleuchtung als sichere Umsetzung der Kerzenatmosphäre;
+- ein reproduzierbarer ReportLab-Generator;
+- ein zweisprachiges PDF und dessen SHA-256-Prüfsumme;
+- eine abgestufte Forschungsbasis mit direkten Quellenlinks.
+
+Die Veröffentlichung formuliert eine Forschungs- und Gestaltungsfrage. Die aktuelle Evidenz stützt besonders respektvolle Betreuung, Selbstbestimmung und kontinuierliche Begleitung. Die isolierten Wirkungen von Raumgestaltung, Musik oder gedimmtem Licht bleiben weiter zu untersuchen.
+
+---
+
+This initial public release presents the **Juri Janovski Thesis on Birth** as a clear and testable research question.
+
+It includes:
+
+- the thesis in German and English;
+- measurable criteria for autonomy, birth experience and clinical safety;
+- environmental control by the woman giving birth;
+- dimmable, flameless lighting as the safe implementation of a candlelit atmosphere;
+- a reproducible ReportLab generator;
+- a bilingual PDF and its SHA-256 checksum;
+- a graded research basis with direct source links.
+
+The release frames a research and design question. Current evidence is strongest for respectful care, autonomy and continuous support. The isolated effects of room design, music or dim lighting remain open for further study.
