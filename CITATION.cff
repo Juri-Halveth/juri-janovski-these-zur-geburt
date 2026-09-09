@@ -5,17 +5,19 @@ type: software
 authors:
   - family-names: "Janovski"
     given-names: "Juri"
-version: 1.2.0
+    email: "juri@halveth.de"
+version: 1.2.1
 date-released: "2026-09-09"
 repository-code: "https://github.com/Juri-Halveth/juri-janovski-these-zur-geburt"
 url: "https://github.com/Juri-Halveth/juri-janovski-these-zur-geburt"
-license-url: "https://github.com/Juri-Halveth/juri-janovski-these-zur-geburt/blob/v1.2.0/LICENSES.md"
+license-url: "https://github.com/Juri-Halveth/juri-janovski-these-zur-geburt/blob/v1.2.1/LICENSES.md"
 abstract: >-
   Ein reproduzierbares ReportLab-Programm und ein zweisprachiges
   deutsch-englisches PDF zur Juri-Janovski-These über eine ruhige,
   selbstbestimmte und klinisch sichere Geburtsumgebung sowie den öffentlichen
   Systemtransfer zum institutionellen Übergangsraum. Version 1.2.0 ergänzt
-  einen bytegenauen Provenienznachweis und eine versionierte Pfad-Lizenzkarte.
+  einen bytegenauen Provenienznachweis und eine versionierte Pfad-Lizenzkarte;
+  Version 1.2.1 ergänzt die öffentliche Kontaktadresse juri@halveth.de.
 keywords:
   - birth environment
   - childbirth

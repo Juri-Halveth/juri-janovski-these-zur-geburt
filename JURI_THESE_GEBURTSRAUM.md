@@ -1,6 +1,8 @@
 # Die Juri-Janovski-These zur Geburt
 
-**Juri Janovski · Öffentliche Fassung · 9. September 2026**
+**Juri Janovski · Öffentliche Fassung v1.2.1 · 9. September 2026**
+
+**Kontakt:** [juri@halveth.de](mailto:juri@halveth.de)
 
 > Die bestmögliche Geburtshilfe verbindet einen von der gebärenden Frau selbst gesteuerten, ruhigen, warmen, geborgenen und gedämpft beleuchteten Raum - auf Wunsch mit ihrer Musik oder mit Stille - mit jederzeit unmittelbar verfügbarer Hebammenhilfe und klinischer Sicherheit.
 

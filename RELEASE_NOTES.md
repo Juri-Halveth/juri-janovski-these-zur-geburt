@@ -1,3 +1,15 @@
+# v1.2.1 — Öffentlicher Kontakt / Public Contact
+
+Diese Patch-Fassung ergänzt die öffentliche Kontaktadresse
+**[juri@halveth.de](mailto:juri@halveth.de)** in der lesbaren Quelle, im
+Repository-Einstieg, in den Zitiermetadaten sowie sichtbar und als Metadatum im
+PDF. Inhalt, Forschungsthese und Lizenzgrenzen bleiben unverändert.
+
+Der veröffentlichte Tag `v1.2.0` und seine Prüfsummen werden nicht verändert.
+Ein eigener `v1.2.1`-Snapshot bindet nach Veröffentlichung die neue Fassung.
+
+---
+
 # v1.2.0 — CODE ZEITWÄRTSZURÜCK, Rechte und Provenienz
 
 Diese Fassung ergänzt die Veröffentlichung um einen überprüfbaren Rechte- und Provenienzumschlag.

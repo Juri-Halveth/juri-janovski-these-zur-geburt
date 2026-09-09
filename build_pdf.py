@@ -14,6 +14,8 @@ from reportlab.platypus import Paragraph
 
 ROOT = Path(__file__).resolve().parent
 OUTPUT = ROOT / "output" / "pdf" / "JURI_JANOVSKI_THESE_ZUR_GEBURT.pdf"
+VERSION = "1.2.1"
+CONTACT_EMAIL = "juri@halveth.de"
 
 PAGE_W, PAGE_H = A4
 MARGIN = 16 * mm
@@ -122,8 +124,9 @@ def footer(c, page_no, lang):
         if lang == "de"
         else "A thesis for testing, not a rigid birth rule. The woman decides; clinical help remains immediately available."
     )
-    c.drawString(MARGIN, 8.5 * mm, note)
-    c.drawRightString(PAGE_W - MARGIN, 8.5 * mm, str(page_no))
+    c.drawString(MARGIN, 9 * mm, note)
+    c.drawCentredString(PAGE_W / 2, 5.7 * mm, f"Kontakt / Contact: {CONTACT_EMAIL}")
+    c.drawRightString(PAGE_W - MARGIN, 9 * mm, str(page_no))
 
 
 def legal_header(c, kicker, title, subtitle, page_no):
@@ -151,7 +154,7 @@ def legal_header(c, kicker, title, subtitle, page_no):
     c.line(MARGIN, 13 * mm, PAGE_W - MARGIN, 13 * mm)
     c.setFillColor(MUTED)
     c.setFont(SANS, 6.6)
-    c.drawString(MARGIN, 8.5 * mm, "Juri Janovski · Version 1.2.0 · 9 September 2026")
+    c.drawString(MARGIN, 8.5 * mm, f"Juri Janovski · Version {VERSION} · {CONTACT_EMAIL} · 9 September 2026")
     c.drawRightString(PAGE_W - MARGIN, 8.5 * mm, str(page_no))
 
 
@@ -401,7 +404,11 @@ def build():
     c = canvas.Canvas(str(OUTPUT), pagesize=A4, pageCompression=1, invariant=1)
     c.setTitle("Die Juri-Janovski-These zur Geburt / The Juri Janovski Thesis on Birth")
     c.setAuthor("Juri Janovski")
-    c.setSubject("Public research question on birth environments; versioned rights and byte-exact provenance record")
+    c.setSubject(
+        f"Public research question on birth environments; version {VERSION}; "
+        f"contact {CONTACT_EMAIL}; versioned rights and byte-exact provenance record"
+    )
+    c.setKeywords(f"Juri Janovski, birth environment, public research, {CONTACT_EMAIL}")
     page_de(c)
     page_en(c)
     page_rights(c)

@@ -4,7 +4,9 @@
 
 [Deutsch](#deutsch) · [English](#english) · **[PDF direkt herunterladen](https://github.com/Juri-Halveth/juri-janovski-these-zur-geburt/releases/latest/download/JURI_JANOVSKI_THESE_ZUR_GEBURT.pdf)**
 
-Dieses öffentliche Projekt enthält die **Juri-Janovski-These zur Geburt** als reproduzierbares, vierseitiges PDF und als Python-Programm. Die These verbindet die Kontrolle der gebärenden Frau über ihre Umgebung mit unmittelbar verfügbarer Hebammenhilfe und klinischer Sicherheit. Version 1.2.0 ergänzt einen bytegenauen Provenienznachweis, eine sichtbare Rechte- und Lizenzgrenze sowie vollständige Hinweise zu den eingebetteten Schriften und ReportLab.
+Dieses öffentliche Projekt enthält die **Juri-Janovski-These zur Geburt** als reproduzierbares, vierseitiges PDF und als Python-Programm. Die These verbindet die Kontrolle der gebärenden Frau über ihre Umgebung mit unmittelbar verfügbarer Hebammenhilfe und klinischer Sicherheit. Version 1.2.0 ergänzt einen bytegenauen Provenienznachweis, eine sichtbare Rechte- und Lizenzgrenze sowie vollständige Hinweise zu den eingebetteten Schriften und ReportLab. Version 1.2.1 ergänzt die öffentliche Kontaktadresse.
+
+**Kontakt / Contact:** [juri@halveth.de](mailto:juri@halveth.de)
 
 ## Deutsch
 
@@ -81,8 +83,8 @@ Der Generator verwendet festgelegte Metadaten, ReportLabs invarianten Ausgabemod
 Der Release-Nachweis lässt sich nach dem Download gegen den annotierten Tag prüfen:
 
 ```console
-python scripts/code_zeitwaertszurueck.py verify --manifest juri-janovski-these-v1.2.0-provenance.json
-git bundle verify juri-janovski-these-v1.2.0-source.bundle
+python scripts/code_zeitwaertszurueck.py verify --manifest juri-janovski-these-v1.2.1-provenance.json
+git bundle verify juri-janovski-these-v1.2.1-source.bundle
 ```
 
 ## Lizenz / License
@@ -98,4 +100,4 @@ Copyright © 2026 Juri Janovski, soweit die jeweiligen Rechte bestehen und von i
 
 Vorgeschlagene Quellenangabe / Suggested attribution:
 
-> Juri Janovski, „Die Juri-Janovski-These zur Geburt“, Version 1.2.0, 2026.
+> Juri Janovski, „Die Juri-Janovski-These zur Geburt“, Version 1.2.1, 2026. Kontakt: juri@halveth.de.

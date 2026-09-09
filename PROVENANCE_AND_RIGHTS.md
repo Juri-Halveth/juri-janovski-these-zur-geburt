@@ -64,9 +64,9 @@ Bedingungen nutzbar. Die aktuelle Pfad- und Versionsordnung steht in
 ## Reproduktion
 
 ```console
-python scripts/code_zeitwaertszurueck.py create --ref v1.2.0 --output juri-janovski-these-v1.2.0-provenance.json
-python scripts/code_zeitwaertszurueck.py verify --manifest juri-janovski-these-v1.2.0-provenance.json
-git bundle verify juri-janovski-these-v1.2.0-source.bundle
+python scripts/code_zeitwaertszurueck.py create --ref v1.2.1 --output juri-janovski-these-v1.2.1-provenance.json
+python scripts/code_zeitwaertszurueck.py verify --manifest juri-janovski-these-v1.2.1-provenance.json
+git bundle verify juri-janovski-these-v1.2.1-source.bundle
 ```
 
 Der `fileSet.sha256Root` ist für denselben Git-Tree deterministisch. Der
