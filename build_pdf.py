@@ -14,7 +14,7 @@ from reportlab.platypus import Paragraph
 
 ROOT = Path(__file__).resolve().parent
 OUTPUT = ROOT / "output" / "pdf" / "JURI_JANOVSKI_THESE_ZUR_GEBURT.pdf"
-VERSION = "1.2.1"
+VERSION = "1.2.2"
 CONTACT_EMAIL = "juri@halveth.de"
 
 PAGE_W, PAGE_H = A4
@@ -110,7 +110,7 @@ def header(c, lang):
 
     c.setFillColor(WHITE)
     c.setFont(SANS, 8.4)
-    sub = "Juri Janovski · 9. September 2026" if lang == "de" else "Juri Janovski · 9 September 2026"
+    sub = "Juri Janovski · 10. September 2026" if lang == "de" else "Juri Janovski · 10 September 2026"
     c.drawString(MARGIN, PAGE_H - 46 * mm, sub)
 
 
@@ -154,7 +154,7 @@ def legal_header(c, kicker, title, subtitle, page_no):
     c.line(MARGIN, 13 * mm, PAGE_W - MARGIN, 13 * mm)
     c.setFillColor(MUTED)
     c.setFont(SANS, 6.6)
-    c.drawString(MARGIN, 8.5 * mm, f"Juri Janovski · Version {VERSION} · {CONTACT_EMAIL} · 9 September 2026")
+    c.drawString(MARGIN, 8.5 * mm, f"Juri Janovski · Version {VERSION} · {CONTACT_EMAIL} · 10 September 2026")
     c.drawRightString(PAGE_W - MARGIN, 8.5 * mm, str(page_no))
 
 

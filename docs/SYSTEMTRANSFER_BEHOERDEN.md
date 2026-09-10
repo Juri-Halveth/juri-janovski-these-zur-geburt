@@ -1,6 +1,6 @@
 # Vom Geburtsraum zum institutionellen Übergangsraum
 
-**Juri Janovski · Öffentliche Systemthese · 9. September 2026**
+**Juri Janovski · Öffentliche Systemthese · Fassung v1.2.2 · 10. September 2026**
 
 Status: `PUBLIC_SYSTEM_DESIGN_PROPOSAL`
 
@@ -111,6 +111,23 @@ Die Bundesagentur für Arbeit besitzt dabei zwei getrennte Rollen:
 Diese Rechtsfunktionen bilden vorhandene Anker. Die Systemthese verbindet sie
 zu einem zugänglichen, einheitlich erkennbaren Verfahren und schlägt damit eine
 zusätzliche institutionelle Gestaltung vor.
+
+## Verwandter öffentlicher Forschungsast
+
+Die eigenständige [These zum verantwortlichen Empfangs- und Zuhörraum](https://github.com/Juri-Halveth/open-research-branches/blob/v0.13.0/branches/public-authority-entry-listening-room/README.md)
+konkretisiert den ersten institutionellen Eintritt in öffentlich zugänglichen
+Empfangs- und Eingangszonen. Sie unterscheidet die Sicherheitsfunktion von
+einer sichtbar verantwortlichen Zuhör-, Orientierungs- und
+Weiterleitungsfunktion und schlägt ihre gemeinsame Erreichbarkeit vor. Der
+Forschungsast bindet den Zugang an ein offenes, sachbezogenes Eignungs- und
+Qualifikationsprofil und prüft Zuständigkeit, Eskalationswege,
+funktionsgerechte Grundvergütung sowie eine transparente, gegenläufige Kopplung
+eines Reparaturhaushalts an einen belastbaren aggregierten
+Zufriedenheitsindex.
+
+Diese Verknüpfung ordnet einen eigenständigen Gestaltungs- und Forschungsast
+zu. Sie macht dessen Vorschläge nicht zu bereits geltendem Recht und ändert die
+Claim Ceiling dieses Dokuments nicht.
 
 ## Die Forschungsfrage
 

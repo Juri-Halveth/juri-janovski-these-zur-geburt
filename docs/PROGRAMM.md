@@ -14,7 +14,11 @@
 
 ## Reproduzierbarkeit
 
-Der PDF-Canvas läuft mit `invariant=1`. Dadurch verwendet ReportLab stabile Metadaten und Objektkennungen. Der Generator greift auf keine Netzwerkquelle und keine private lokale Datei zu. Inhalt, Layout und Schriften sind durch das Repository und die festgelegte ReportLab-Version gebunden.
+Der PDF-Canvas läuft mit `invariant=1`. Dadurch verwendet ReportLab stabile
+Metadaten und Objektkennungen. Der Generator greift auf keine Netzwerkquelle
+und keine private lokale Datei zu. Inhalt, Layout und Schriften sind durch das
+Repository gebunden. Der bytegenaue Release-Build bindet zusätzlich Python
+3.12, `reportlab==4.4.9`, `PYTHONHASHSEED=0` und `TZ=UTC`.
 
 Der GitHub-Actions-Workflow baut die PDF zweimal und vergleicht:
 
@@ -26,6 +30,9 @@ Der GitHub-Actions-Workflow baut die PDF zweimal und vergleicht:
 Anschließend stellt GitHub PDF und Prüfsumme als Workflow-Artefakt bereit. Das GitHub-Release enthält dieselben beiden Dateien als dauerhaften Download.
 
 ## Ausführen
+
+Für einen bytegleichen Referenz-Build muss `python --version` Python 3.12
+ausgeben.
 
 ```console
 python -m pip install -r requirements.txt

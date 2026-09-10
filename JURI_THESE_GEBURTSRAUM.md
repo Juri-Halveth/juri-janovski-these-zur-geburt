@@ -1,6 +1,6 @@
 # Die Juri-Janovski-These zur Geburt
 
-**Juri Janovski · Öffentliche Fassung v1.2.1 · 9. September 2026**
+**Juri Janovski · Öffentliche Fassung v1.2.2 · 10. September 2026**
 
 **Kontakt:** [juri@halveth.de](mailto:juri@halveth.de)
 

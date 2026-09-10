@@ -1,3 +1,22 @@
+# v1.2.2 — Empfangs- und Zuhörraum / Authority Entry Listening Room
+
+Diese Patch-Fassung verknüpft den bestehenden institutionellen Übergangsraum
+mit dem eigenständigen, taggebundenen öffentlichen Forschungsast zum
+[verantwortlichen Empfangs- und Zuhörraum](https://github.com/Juri-Halveth/open-research-branches/blob/v0.13.0/branches/public-authority-entry-listening-room/README.md).
+Die Verknüpfung konkretisiert den ersten institutionellen Eintritt in
+öffentlich zugänglichen Empfangs- und Eingangszonen. Sie hält Sicherheits-,
+Zuhör-, Orientierungs- und Weiterleitungsfunktion unterscheidbar und beschreibt
+ihre gemeinsame Erreichbarkeit als Gestaltungsvorschlag.
+
+Geburtsthese, medizinische Evidenz, bestehende Rechtsanker, Lizenzgrenzen und
+Claim Ceiling bleiben unverändert. Der veröffentlichte Tag `v1.2.1` und seine
+Prüfsummen werden nicht verändert. Ein eigener `v1.2.2`-Snapshot bindet nach
+Veröffentlichung die neue Fassung. Die Build-Dokumentation bindet für den
+bytegleichen Referenz-Build nun ausdrücklich die bereits im GitHub-Workflow
+verwendete Laufzeit Python 3.12 sowie ReportLab 4.4.9.
+
+---
+
 # v1.2.1 — Öffentlicher Kontakt / Public Contact
 
 Diese Patch-Fassung ergänzt die öffentliche Kontaktadresse

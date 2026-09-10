@@ -4,7 +4,7 @@
 
 [Deutsch](#deutsch) · [English](#english) · **[PDF direkt herunterladen](https://github.com/Juri-Halveth/juri-janovski-these-zur-geburt/releases/latest/download/JURI_JANOVSKI_THESE_ZUR_GEBURT.pdf)**
 
-Dieses öffentliche Projekt enthält die **Juri-Janovski-These zur Geburt** als reproduzierbares, vierseitiges PDF und als Python-Programm. Die These verbindet die Kontrolle der gebärenden Frau über ihre Umgebung mit unmittelbar verfügbarer Hebammenhilfe und klinischer Sicherheit. Version 1.2.0 ergänzt einen bytegenauen Provenienznachweis, eine sichtbare Rechte- und Lizenzgrenze sowie vollständige Hinweise zu den eingebetteten Schriften und ReportLab. Version 1.2.1 ergänzt die öffentliche Kontaktadresse.
+Dieses öffentliche Projekt enthält die **Juri-Janovski-These zur Geburt** als reproduzierbares, vierseitiges PDF und als Python-Programm. Die These verbindet die Kontrolle der gebärenden Frau über ihre Umgebung mit unmittelbar verfügbarer Hebammenhilfe und klinischer Sicherheit. Version 1.2.0 ergänzt einen bytegenauen Provenienznachweis, eine sichtbare Rechte- und Lizenzgrenze sowie vollständige Hinweise zu den eingebetteten Schriften und ReportLab. Version 1.2.1 ergänzt die öffentliche Kontaktadresse. Version 1.2.2 verknüpft den eigenständigen öffentlichen Forschungsast zum verantwortlichen Empfangs- und Zuhörraum.
 
 **Kontakt / Contact:** [juri@halveth.de](mailto:juri@halveth.de)
 
@@ -40,6 +40,17 @@ Wiedereintritt. Die öffentliche Systemthese bindet vorhandene Rechtsfunktionen
 aus Sozial-, Arbeitsschutz-, Teilhabe- und Personalvertretungsrecht und macht
 die darüber hinausgehende Gestaltung als Vorschlag sichtbar.
 
+Die eigenständige [These zum verantwortlichen Empfangs- und Zuhörraum](https://github.com/Juri-Halveth/open-research-branches/blob/v0.13.0/branches/public-authority-entry-listening-room/README.md)
+konkretisiert den ersten institutionellen Eintritt in öffentlich zugänglichen
+Empfangs- und Eingangszonen. Sie unterscheidet die Sicherheitsfunktion von
+einer sichtbar verantwortlichen Zuhör-, Orientierungs- und
+Weiterleitungsfunktion und schlägt ihre gemeinsame Erreichbarkeit vor. Der
+verlinkte Forschungsast bindet den Zugang an ein offenes, sachbezogenes
+Eignungs- und Qualifikationsprofil und prüft Zuständigkeit, Eskalationswege,
+funktionsgerechte Grundvergütung sowie eine transparente, gegenläufige Kopplung
+eines Reparaturhaushalts an einen belastbaren aggregierten
+Zufriedenheitsindex.
+
 ## English
 
 ### The thesis
@@ -67,24 +78,30 @@ The woman controls light, sound, music or silence, movement, privacy and chosen 
 - **Generator:** [build_pdf.py](build_pdf.py)
 - **Programmerklärung:** [docs/PROGRAMM.md](docs/PROGRAMM.md)
 - **Systemtransfer:** [docs/SYSTEMTRANSFER_BEHOERDEN.md](docs/SYSTEMTRANSFER_BEHOERDEN.md)
+- **Empfangs- und Zuhörraum:** [öffentlicher Forschungsast v0.13.0](https://github.com/Juri-Halveth/open-research-branches/blob/v0.13.0/branches/public-authority-entry-listening-room/README.md)
 - **Provenienz und Rechte:** [PROVENANCE_AND_RIGHTS.md](PROVENANCE_AND_RIGHTS.md)
 - **Pfad- und Versionslizenzen:** [LICENSES.md](LICENSES.md)
 - **Drittanbieterhinweise:** [THIRD_PARTY_NOTICES.md](THIRD_PARTY_NOTICES.md)
 
-Lokaler Build ab dem Repository-Stamm:
+Für den bytegleichen Referenz-Build muss `python --version` Python 3.12
+ausgeben. Ab dem Repository-Stamm:
 
 ```console
 python -m pip install -r requirements.txt
 python build_pdf.py
 ```
 
-Der Generator verwendet festgelegte Metadaten, ReportLabs invarianten Ausgabemodus, eine feste Inhaltsreihenfolge und die mit ReportLab ausgelieferten Vera-Schriften. Zwei Builds mit denselben gebundenen Eingaben werden im GitHub-Workflow bytegenau verglichen.
+Der Generator verwendet festgelegte Metadaten, ReportLabs invarianten
+Ausgabemodus, eine feste Inhaltsreihenfolge und die mit ReportLab ausgelieferten
+Vera-Schriften. Der bytegenaue Release-Build bindet Python 3.12,
+`reportlab==4.4.9`, `PYTHONHASHSEED=0` und `TZ=UTC`. Zwei Builds mit diesen
+Eingaben werden im GitHub-Workflow bytegenau verglichen.
 
 Der Release-Nachweis lässt sich nach dem Download gegen den annotierten Tag prüfen:
 
 ```console
-python scripts/code_zeitwaertszurueck.py verify --manifest juri-janovski-these-v1.2.1-provenance.json
-git bundle verify juri-janovski-these-v1.2.1-source.bundle
+python scripts/code_zeitwaertszurueck.py verify --manifest juri-janovski-these-v1.2.2-provenance.json
+git bundle verify juri-janovski-these-v1.2.2-source.bundle
 ```
 
 ## Lizenz / License
@@ -100,4 +117,4 @@ Copyright © 2026 Juri Janovski, soweit die jeweiligen Rechte bestehen und von i
 
 Vorgeschlagene Quellenangabe / Suggested attribution:
 
-> Juri Janovski, „Die Juri-Janovski-These zur Geburt“, Version 1.2.1, 2026. Kontakt: juri@halveth.de.
+> Juri Janovski, „Die Juri-Janovski-These zur Geburt“, Version 1.2.2, 2026. Kontakt: juri@halveth.de.
