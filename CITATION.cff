@@ -1,25 +1,23 @@
 cff-version: 1.2.0
-message: "Wenn du dieses Projekt verwendest oder darauf Bezug nimmst, zitiere es bitte wie folgt."
-title: "Die Juri-Janovski-These zur Geburt"
+message: "Redaktionelle Namensfassung vom 11.09.2026 auf Basis von v1.2.2 (10.09.2026); keine eigenständige Releaseversion."
+title: "These zur Geburt von HALVETH!!!"
 type: software
 authors:
-  - family-names: "Janovski"
-    given-names: "Juri"
-    email: "juri@halveth.de"
-version: 1.2.2
-date-released: "2026-09-10"
+  - family-names: "HALVETH!!!"
 repository-code: "https://github.com/Juri-Halveth/juri-janovski-these-zur-geburt"
 url: "https://github.com/Juri-Halveth/juri-janovski-these-zur-geburt"
 license-url: "https://github.com/Juri-Halveth/juri-janovski-these-zur-geburt/blob/v1.2.2/LICENSES.md"
 abstract: >-
   Ein reproduzierbares ReportLab-Programm und ein zweisprachiges
-  deutsch-englisches PDF zur Juri-Janovski-These über eine ruhige,
+  deutsch-englisches PDF zur These von HALVETH!!! über eine ruhige,
   selbstbestimmte und klinisch sichere Geburtsumgebung sowie den öffentlichen
   Systemtransfer zum institutionellen Übergangsraum. Version 1.2.0 ergänzt
   einen bytegenauen Provenienznachweis und eine versionierte Pfad-Lizenzkarte;
-  Version 1.2.1 ergänzt die öffentliche Kontaktadresse juri@halveth.de;
   Version 1.2.2 verknüpft den eigenständigen öffentlichen Forschungsast zum
-  verantwortlichen Empfangs- und Zuhörraum.
+  verantwortlichen Empfangs- und Zuhörraum. Diese redaktionelle Namensfassung
+  vom 11.09.2026 beruht auf v1.2.2 vom 10.09.2026 und besitzt keine eigene
+  Releaseversion. Öffentlicher Kontakt erfolgt über die GitHub Issues des
+  Repositorys.
 keywords:
   - birth environment
   - childbirth

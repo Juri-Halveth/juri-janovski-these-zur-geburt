@@ -1,8 +1,8 @@
-# Die Juri-Janovski-These zur Geburt
+# These zur Geburt von HALVETH!!!
 
-**Juri Janovski · Öffentliche Fassung v1.2.2 · 10. September 2026**
+**HALVETH!!! · Redaktioneller Namensfassungsstand: 11. September 2026 · Basis: öffentliche Fassung v1.2.2 vom 10. September 2026**
 
-**Kontakt:** [juri@halveth.de](mailto:juri@halveth.de)
+**Kontakt:** [GitHub Issues](https://github.com/Juri-Halveth/juri-janovski-these-zur-geburt/issues) · Beiträge sind öffentlich.
 
 > Die bestmögliche Geburtshilfe verbindet einen von der gebärenden Frau selbst gesteuerten, ruhigen, warmen, geborgenen und gedämpft beleuchteten Raum - auf Wunsch mit ihrer Musik oder mit Stille - mit jederzeit unmittelbar verfügbarer Hebammenhilfe und klinischer Sicherheit.
 
@@ -27,7 +27,7 @@ Die Frau entscheidet über Licht, Geräusche, Musik, Temperatur im sicheren Bere
 
 ## Aufruf
 
-Ich, Juri Janovski, fordere Geburtskliniken, Geburtshäuser, Hebammen, Ärztinnen und Ärzte, Forschungseinrichtungen und internationale Gesundheitsorganisationen auf, diese Frage gemeinsam mit gebärenden Frauen in transparenten, vorab registrierten und ausreichend großen Studien zu beantworten.
+Ich, HALVETH!!!, fordere Geburtskliniken, Geburtshäuser, Hebammen, Ärztinnen und Ärzte, Forschungseinrichtungen und internationale Gesundheitsorganisationen auf, diese Frage gemeinsam mit gebärenden Frauen in transparenten, vorab registrierten und ausreichend großen Studien zu beantworten.
 
 Geburtsräume dürfen nicht allein nach technischer Zweckmäßigkeit gestaltet werden. Selbstbestimmung, Geborgenheit und klinische Sicherheit gehören gemeinsam untersucht und gemeinsam verwirklicht. Die Frau bestimmt das gewünschte Umfeld; die Medizin gewährleistet Schutz und sofortige Hilfe.
 
@@ -51,7 +51,7 @@ Geburtsräume dürfen nicht allein nach technischer Zweckmäßigkeit gestaltet w
 
 ---
 
-# The Juri Janovski Thesis on Birth
+# Thesis on Birth by HALVETH!!!
 
 > The best possible maternity care combines a calm, warm, sheltered and dimly lit environment controlled by the woman giving birth - with her chosen music or silence - with immediately available midwifery support and clinical safety.
 
@@ -59,7 +59,7 @@ Geburtsräume dürfen nicht allein nach technischer Zweckmäßigkeit gestaltet w
 
 The woman controls light, sound, music, safe room temperature, movement, privacy and chosen companions, and may change any preference at any time. Candles describe the atmosphere; implementation uses dimmable flameless lighting. Examination and emergency lighting remain instantly available.
 
-I, Juri Janovski, call on maternity units, birth centres, midwives, physicians, researchers and international health organisations to answer this question together with birthing women through transparent, preregistered and adequately powered studies.
+I, HALVETH!!!, call on maternity units, birth centres, midwives, physicians, researchers and international health organisations to answer this question together with birthing women through transparent, preregistered and adequately powered studies.
 
 ---
 

@@ -15,7 +15,8 @@ from reportlab.platypus import Paragraph
 ROOT = Path(__file__).resolve().parent
 OUTPUT = ROOT / "output" / "pdf" / "JURI_JANOVSKI_THESE_ZUR_GEBURT.pdf"
 VERSION = "1.2.2"
-CONTACT_EMAIL = "juri@halveth.de"
+NAME_EDITION_DATE = "2026-09-11"
+CONTACT_URL = "https://github.com/Juri-Halveth/juri-janovski-these-zur-geburt/issues"
 
 PAGE_W, PAGE_H = A4
 MARGIN = 16 * mm
@@ -102,7 +103,7 @@ def header(c, lang):
     label = "ÖFFENTLICHE FORSCHUNGSFRAGE" if lang == "de" else "A PUBLIC RESEARCH QUESTION"
     c.drawString(MARGIN, PAGE_H - 15 * mm, label)
 
-    title = "DIE JURI-JANOVSKI-THESE\nZUR GEBURT" if lang == "de" else "THE JURI JANOVSKI THESIS\nON BIRTH"
+    title = "HALVETH!!!\nTHESE ZUR GEBURT" if lang == "de" else "HALVETH!!!\nTHESIS ON BIRTH"
     title_size = 25 if lang == "de" else 22.5
     title_leading = 28 if lang == "de" else 26
     title_style = style("title", font=SERIF_BOLD, size=title_size, leading=title_leading, color=WHITE)
@@ -110,7 +111,11 @@ def header(c, lang):
 
     c.setFillColor(WHITE)
     c.setFont(SANS, 8.4)
-    sub = "Juri Janovski · 10. September 2026" if lang == "de" else "Juri Janovski · 10 September 2026"
+    sub = (
+        f"HALVETH!!! · Namensfassung 11.09.2026 · Basis v{VERSION} vom 10.09.2026"
+        if lang == "de"
+        else f"HALVETH!!! · Name edition 11 September 2026 · Based on v{VERSION}, 10 September 2026"
+    )
     c.drawString(MARGIN, PAGE_H - 46 * mm, sub)
 
 
@@ -125,7 +130,8 @@ def footer(c, page_no, lang):
         else "A thesis for testing, not a rigid birth rule. The woman decides; clinical help remains immediately available."
     )
     c.drawString(MARGIN, 9 * mm, note)
-    c.drawCentredString(PAGE_W / 2, 5.7 * mm, f"Kontakt / Contact: {CONTACT_EMAIL}")
+    c.drawCentredString(PAGE_W / 2, 5.7 * mm, "Kontakt / Contact: GitHub Issues (öffentlich / public)")
+    c.linkURL(CONTACT_URL, (MARGIN, 4 * mm, PAGE_W - MARGIN, 8 * mm), relative=0)
     c.drawRightString(PAGE_W - MARGIN, 9 * mm, str(page_no))
 
 
@@ -154,7 +160,9 @@ def legal_header(c, kicker, title, subtitle, page_no):
     c.line(MARGIN, 13 * mm, PAGE_W - MARGIN, 13 * mm)
     c.setFillColor(MUTED)
     c.setFont(SANS, 6.6)
-    c.drawString(MARGIN, 8.5 * mm, f"Juri Janovski · Version {VERSION} · {CONTACT_EMAIL} · 10 September 2026")
+    c.drawString(MARGIN, 8.5 * mm, f"HALVETH!!! · Namensfassung / Name edition 11.09.2026 · Basis / Base v{VERSION} (10.09.2026)")
+    c.drawCentredString(PAGE_W / 2, 5.1 * mm, "Kontakt / Contact: GitHub Issues (öffentlich / public)")
+    c.linkURL(CONTACT_URL, (MARGIN, 3.5 * mm, PAGE_W - MARGIN, 7.5 * mm), relative=0)
     c.drawRightString(PAGE_W - MARGIN, 8.5 * mm, str(page_no))
 
 
@@ -202,9 +210,9 @@ def page_de(c):
 
     y = min(left_y, right_y) - 8 * mm
     rounded_panel(c, MARGIN, y - 42 * mm, PAGE_W - 2 * MARGIN, 42 * mm, PALE_TEAL, HexColor("#A4CEC5"), 10)
-    draw_para(c, "AUFRUF IM NAMEN VON JURI", MARGIN + 7 * mm, y - 6 * mm, PAGE_W - 2 * MARGIN - 14 * mm, style("callhead", font=SANS_BOLD, size=9.5, leading=11, color=TEAL))
+    draw_para(c, "AUFRUF VON HALVETH!!!", MARGIN + 7 * mm, y - 6 * mm, PAGE_W - 2 * MARGIN - 14 * mm, style("callhead", font=SANS_BOLD, size=9.5, leading=11, color=TEAL))
     call = (
-        "Ich, Juri Janovski, fordere Geburtskliniken, Geburtshäuser, Hebammen, Ärztinnen und Ärzte, Forschungseinrichtungen und internationale Gesundheitsorganisationen auf, diese Frage <b>gemeinsam mit gebärenden Frauen</b> in transparenten, vorab registrierten und ausreichend großen Studien zu beantworten.<br/><br/>"
+        "Ich, HALVETH!!!, fordere Geburtskliniken, Geburtshäuser, Hebammen, Ärztinnen und Ärzte, Forschungseinrichtungen und internationale Gesundheitsorganisationen auf, diese Frage <b>gemeinsam mit gebärenden Frauen</b> in transparenten, vorab registrierten und ausreichend großen Studien zu beantworten.<br/><br/>"
         "Geburtsräume dürfen nicht allein nach technischer Zweckmäßigkeit gestaltet werden. Selbstbestimmung, Geborgenheit und klinische Sicherheit gehören gemeinsam untersucht und verwirklicht."
     )
     draw_para(c, call, MARGIN + 7 * mm, y - 13 * mm, PAGE_W - 2 * MARGIN - 14 * mm, CALL)
@@ -272,9 +280,9 @@ def page_en(c):
 
     y = min(left_y, right_y) - 8 * mm
     rounded_panel(c, MARGIN, y - 42 * mm, PAGE_W - 2 * MARGIN, 42 * mm, PALE_TEAL, HexColor("#A4CEC5"), 10)
-    draw_para(c, "A PUBLIC CALL IN JURI'S NAME", MARGIN + 7 * mm, y - 6 * mm, PAGE_W - 2 * MARGIN - 14 * mm, style("callhead_en", font=SANS_BOLD, size=9.5, leading=11, color=TEAL))
+    draw_para(c, "A PUBLIC CALL BY HALVETH!!!", MARGIN + 7 * mm, y - 6 * mm, PAGE_W - 2 * MARGIN - 14 * mm, style("callhead_en", font=SANS_BOLD, size=9.5, leading=11, color=TEAL))
     call = (
-        "I, Juri Janovski, call on maternity units, birth centres, midwives, physicians, researchers and international health organisations to answer this question <b>together with women giving birth</b> through transparent, preregistered and adequately powered studies.<br/><br/>"
+        "I, HALVETH!!!, call on maternity units, birth centres, midwives, physicians, researchers and international health organisations to answer this question <b>together with women giving birth</b> through transparent, preregistered and adequately powered studies.<br/><br/>"
         "Birth rooms should not be designed only around technical convenience. Autonomy, shelter and clinical safety must be studied and realised together."
     )
     draw_para(c, call, MARGIN + 7 * mm, y - 13 * mm, PAGE_W - 2 * MARGIN - 14 * mm, CALL)
@@ -402,13 +410,14 @@ def page_third_party(c):
 def build():
     OUTPUT.parent.mkdir(parents=True, exist_ok=True)
     c = canvas.Canvas(str(OUTPUT), pagesize=A4, pageCompression=1, invariant=1)
-    c.setTitle("Die Juri-Janovski-These zur Geburt / The Juri Janovski Thesis on Birth")
-    c.setAuthor("Juri Janovski")
+    c.setTitle("HALVETH!!! - These zur Geburt / Thesis on Birth")
+    c.setAuthor("HALVETH!!!")
     c.setSubject(
-        f"Public research question on birth environments; version {VERSION}; "
-        f"contact {CONTACT_EMAIL}; versioned rights and byte-exact provenance record"
+        f"Public research question on birth environments; editorial name edition {NAME_EDITION_DATE}; "
+        f"based on release v{VERSION} dated 2026-09-10; no new release version; "
+        f"public contact {CONTACT_URL}; versioned rights and byte-exact provenance record"
     )
-    c.setKeywords(f"Juri Janovski, birth environment, public research, {CONTACT_EMAIL}")
+    c.setKeywords(f"HALVETH!!!, birth environment, public research, editorial name edition {NAME_EDITION_DATE}")
     page_de(c)
     page_en(c)
     page_rights(c)

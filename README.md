@@ -1,12 +1,16 @@
-# Juri Janovski – These zur Geburt / Thesis on Birth
+# HALVETH!!! – These zur Geburt / Thesis on Birth
+
+**Redaktioneller Namensfassungsstand / Editorial name edition: 11.09.2026, auf Basis / based on v1.2.2 vom / dated 10.09.2026.**
+
+Diese Arbeitsfassung aktualisiert die öffentliche Namens- und Kontaktanzeige. Die verlinkten Release-Downloads und die gespeicherte Repository-PDF dokumentieren weiterhin die historische Basisfassung v1.2.2; eine eigene Releaseversion für diese Namensfassung wurde nicht vergeben.
 
 [![PDF build](https://github.com/Juri-Halveth/juri-janovski-these-zur-geburt/actions/workflows/build-pdf.yml/badge.svg)](https://github.com/Juri-Halveth/juri-janovski-these-zur-geburt/actions/workflows/build-pdf.yml)
 
 [Deutsch](#deutsch) · [English](#english) · **[PDF direkt herunterladen](https://github.com/Juri-Halveth/juri-janovski-these-zur-geburt/releases/latest/download/JURI_JANOVSKI_THESE_ZUR_GEBURT.pdf)**
 
-Dieses öffentliche Projekt enthält die **Juri-Janovski-These zur Geburt** als reproduzierbares, vierseitiges PDF und als Python-Programm. Die These verbindet die Kontrolle der gebärenden Frau über ihre Umgebung mit unmittelbar verfügbarer Hebammenhilfe und klinischer Sicherheit. Version 1.2.0 ergänzt einen bytegenauen Provenienznachweis, eine sichtbare Rechte- und Lizenzgrenze sowie vollständige Hinweise zu den eingebetteten Schriften und ReportLab. Version 1.2.1 ergänzt die öffentliche Kontaktadresse. Version 1.2.2 verknüpft den eigenständigen öffentlichen Forschungsast zum verantwortlichen Empfangs- und Zuhörraum.
+Dieses öffentliche Projekt enthält die **These zur Geburt von HALVETH!!!** als reproduzierbares, vierseitiges PDF und als Python-Programm. Die These verbindet die Kontrolle der gebärenden Frau über ihre Umgebung mit unmittelbar verfügbarer Hebammenhilfe und klinischer Sicherheit. Version 1.2.0 ergänzt einen bytegenauen Provenienznachweis, eine sichtbare Rechte- und Lizenzgrenze sowie vollständige Hinweise zu den eingebetteten Schriften und ReportLab. Version 1.2.1 ergänzt die öffentliche Kontaktadresse. Version 1.2.2 verknüpft den eigenständigen öffentlichen Forschungsast zum verantwortlichen Empfangs- und Zuhörraum.
 
-**Kontakt / Contact:** [juri@halveth.de](mailto:juri@halveth.de)
+**Kontakt / Contact:** [GitHub Issues](https://github.com/Juri-Halveth/juri-janovski-these-zur-geburt/issues) · Beiträge sind öffentlich / posts are public.
 
 ## Deutsch
 

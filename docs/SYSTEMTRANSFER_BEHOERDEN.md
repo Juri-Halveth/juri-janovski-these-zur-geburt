@@ -1,12 +1,12 @@
 # Vom Geburtsraum zum institutionellen Übergangsraum
 
-**Juri Janovski · Öffentliche Systemthese · Fassung v1.2.2 · 10. September 2026**
+**HALVETH!!! · Öffentliche Systemthese · Redaktioneller Namensfassungsstand: 11. September 2026 · Basis: v1.2.2 vom 10. September 2026**
 
 Status: `PUBLIC_SYSTEM_DESIGN_PROPOSAL`
 
 ## Die Übertragung
 
-Die Juri-Janovski-These zur Geburt beschreibt einen kritischen Übergang, bei
+Die These zur Geburt von HALVETH!!! beschreibt einen kritischen Übergang, bei
 dem eine Person Kontrolle über ihr unmittelbares Umfeld behält und zugleich
 fachliche Hilfe erreichbar bleibt. Diese Gestaltungslogik lässt sich auf
 Behörden und große öffentliche Arbeitgeber übertragen.
