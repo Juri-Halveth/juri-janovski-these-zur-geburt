@@ -1,5 +1,7 @@
 # HALVETH!!! – These zur Geburt / Thesis on Birth
 
+**HALVETH authorship and participation:** Juri Halveth (Juri Janovski) claims the rights in the original thesis, its expression, structure, analysis, generated presentation and new code contributions. Evidence status is not a rights waiver. Commercial use of protected new HALVETH contributions requires a prior written license and participation agreement. Historical license grants remain attached to their versions. See [HALVETH-RIGHTS.md](HALVETH-RIGHTS.md) and [LICENSES.md](LICENSES.md).
+
 **Redaktioneller Namensfassungsstand / Editorial name edition: 11.09.2026, auf Basis / based on v1.2.2 vom / dated 10.09.2026.**
 
 Diese Arbeitsfassung aktualisiert die öffentliche Namens- und Kontaktanzeige. Die verlinkten Release-Downloads und die gespeicherte Repository-PDF dokumentieren weiterhin die historische Basisfassung v1.2.2; eine eigene Releaseversion für diese Namensfassung wurde nicht vergeben.
@@ -114,7 +116,9 @@ Copyright © 2026 Juri Janovski, soweit die jeweiligen Rechte bestehen und von i
 
 - Bestehender Programmcode gemäß Pfadkarte: [MIT License](LICENSE-CODE)
 - These, Dokumentation und PDF in den Tags `v1.0.0` und `v1.1.0`: [Creative Commons Attribution 4.0 International](LICENSE-CONTENT)
-- Unterscheidbare neue Beiträge ab `v1.2.0`: [Juri Public-Interest Research Permission 1.0](LICENSE-JURI-PUBLIC-INTEREST.md)
+- Unterscheidbare neue Beiträge ab `v1.2.0` bis zum gebundenen Parent: [Juri Public-Interest Research Permission 1.0](LICENSE-JURI-PUBLIC-INTEREST.md)
+- Unterscheidbare neue originale HALVETH-Beiträge nach dem gebundenen Parent: [HALVETH Public-Interest Research License 2.0](LICENSE-HALVETH-PIRL-2.0.md)
+- Kommerzielle Nutzung der geschützten neuen HALVETH-Beiträge: nur mit vorheriger schriftlicher Lizenz und Beteiligungsvereinbarung
 - Verbindliche Zuordnung: [LICENSES.md](LICENSES.md)
 
 Ältere Freigaben bleiben für die damaligen Fassungen und überlappende Bestandteile bestehen. Tatsachen, allgemeine Ideen, Methoden, Gesetzestexte, Zitate, Namen, Marken, Links und fremde Werke werden durch diese Veröffentlichung nicht angeeignet.

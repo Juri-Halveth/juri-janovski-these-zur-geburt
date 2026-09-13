@@ -25,3 +25,17 @@ Tatsachen, allgemeine Ideen, Methoden, Gesetzestexte, Namen, Marken, Zitate,
 verlinkte Quellen und fremde Werke werden nicht exklusiviert. Einzelheiten und
 der technische Nachweis stehen in
 [`PROVENANCE_AND_RIGHTS.md`](PROVENANCE_AND_RIGHTS.md).
+
+## HALVETH 2.0 prospective cutover
+
+The historical parent is `f0ef8d3f9fa6629fe6b207d7041d670917d4ebbf`. All
+previous MIT, CC BY 4.0 and Juri Public-Interest Research Permission 1.0 grants
+remain effective for their mapped versions and overlapping material.
+
+`HALVETH-RIGHTS.md`, `HALVETH-RIGHTS.json`,
+`LICENSE-HALVETH-PIRL-2.0.md`, and distinguishable new original HALVETH
+contributions first published after that parent are assigned to [HALVETH
+Public-Interest Research License 2.0](LICENSE-HALVETH-PIRL-2.0.md), unless a
+file-specific notice expressly says otherwise. This prospective rule takes
+precedence for those post-parent additions; earlier and overlapping material
+retains its historical permission.
