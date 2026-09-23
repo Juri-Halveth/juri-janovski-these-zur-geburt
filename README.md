@@ -112,7 +112,7 @@ git bundle verify juri-janovski-these-v1.2.2-source.bundle
 
 ## Lizenz / License
 
-Copyright © 2026 Juri Janovski, soweit die jeweiligen Rechte bestehen und von ihm kontrolliert werden.
+**Rechtehinweis:** Copyright © 2026 Juri Janovski, veröffentlichend als [@Juri-Halveth](https://github.com/Juri-Halveth)
 
 - Bestehender Programmcode gemäß Pfadkarte: [MIT License](LICENSE-CODE)
 - These, Dokumentation und PDF in den Tags `v1.0.0` und `v1.1.0`: [Creative Commons Attribution 4.0 International](LICENSE-CONTENT)
