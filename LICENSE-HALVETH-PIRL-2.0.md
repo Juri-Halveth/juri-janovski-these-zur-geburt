@@ -2,9 +2,7 @@
 
 SPDX-License-Identifier: LicenseRef-HALVETH-PIRL-2.0
 
-Copyright (c) 2026 Juri Janovski, publishing as Juri Halveth
-([@Juri-Halveth](https://github.com/Juri-Halveth)), to the extent that the
-applicable rights exist and are controlled by him.
+**Rechtehinweis:** Copyright © 2026 Juri Janovski, veröffentlichend als [@Juri-Halveth](https://github.com/Juri-Halveth)
 
 This license applies only to files, versions and contributions that a
 repository-specific `LICENSES.md` expressly assigns to it. It never licenses
