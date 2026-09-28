@@ -1,5 +1,14 @@
 # HALVETH!!! – These zur Geburt / Thesis on Birth
 
+<!-- HALVETH_WORK_CERTIFICATES_V1_1 -->
+## Juri Janovski / Juri Halveth – Privates HALVETH-Werkzertifikat
+
+[Privates HALVETH-Werkzertifikat: Dokumentierte Forschungsfrage und reproduzierbarer PDF-Workflow – These zur Geburt](https://juri-halveth.github.io/werkzertifikate/#werk-juri-janovski-these-zur-geburt).
+
+HALVETH VERACHEL STUDIOS · Quellstand, dokumentierte Ergebnisse und SHA-256-Belege stehen im Werkzertifikat. Private, mit Codex erstellte Werkdokumentation; keine ISTQB- oder sonstige Personenzertifizierung.
+<!-- /HALVETH_WORK_CERTIFICATES_V1_1 -->
+
+
 **HALVETH authorship and participation:** Juri Halveth (Juri Janovski) claims the rights in the original thesis, its expression, structure, analysis, generated presentation and new code contributions. Evidence status is not a rights waiver. Commercial use of protected new HALVETH contributions requires a prior written license and participation agreement. Historical license grants remain attached to their versions. See [HALVETH-RIGHTS.md](HALVETH-RIGHTS.md) and [LICENSES.md](LICENSES.md).
 
 **Redaktioneller Namensfassungsstand / Editorial name edition: 11.09.2026, auf Basis / based on v1.2.2 vom / dated 10.09.2026.**
